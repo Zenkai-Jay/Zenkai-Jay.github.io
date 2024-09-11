@@ -1,8 +1,24 @@
 body {
-    background: red;
+    background: #ff5;
     font-family: Arial, Helvetica, sans-serif;
     }
     h1 {
-    color: yellow;
+    color: red;
     text-align: center;
+    }
+
+    h2{
+    color: purple;
+    }
+
+    h3{
+    color: brown
+    }
+
+    h4{
+    color: blueviolet
+    }
+
+    h5{
+    color: black
     }
