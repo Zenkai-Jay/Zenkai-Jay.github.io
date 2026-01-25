@@ -1,0 +1,240 @@
+/* Main Sturcture */
+body {
+    background-color: #efeeda;
+}
+
+#main-content {
+   
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #efeeda;
+
+}
+
+#main-header {
+
+}
+
+
+/* Navigation */
+#main-nav ul {
+    padding-left: 0%; /* Remove indentation */
+
+}
+
+#main-nav li {
+    list-style-type: none; /* Remove bullet */
+    background: #c87b77;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    
+}
+
+#main-nav a{
+    text-decoration: none; /* Remove underline */
+    color: white; 
+    border-radius: 2px;
+}
+
+
+
+
+
+/* Typography */
+#main-header h1 {
+    text-align: center;
+    color: #5b7f7b;
+
+}
+
+#top {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+#content{
+   
+}
+
+#important-text {
+  flex: 1;
+  padding: 80px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5b7f7b;
+}
+
+
+#staff {
+  flex: 1.3;
+  display: flex;
+  gap: 18px;
+  padding: 10px 20px 20px 10px;
+  align-items: flex-start;
+}
+
+
+.staffCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.staffTitle {
+  background-color: #5b7f7b;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 6px;
+  box-sizing: border-box;
+}
+
+
+.staffImgWrap {
+  background-color: #b5cdc6;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.staffImgWrap img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.idea-row {
+  display: flex;
+  align-items: stretch;
+  background-color: #5b7f7b;
+  color: white;
+}
+
+.idea-row.reverse {
+  background-color: #b5cdc6;
+  color: #2f4644;
+}
+
+.idea-img {
+  width: 200px;
+  background-color: #9bbab0;
+}
+
+.idea-img img{
+  width: 200px;
+}
+
+.idea-text {
+  padding: 20px;
+  flex: 1;
+}
+
+#main-footer {
+  background: gray;
+  color: #fff;
+  text-align:center;
+  padding: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+
+
+
+
+/* Larger Devices */
+@media (max-width: 700px) {
+
+    /* make sure the top stack is forced */
+  #main-content #top {
+    flex-direction: column;
+    align-items: stretch ;
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  /* Force staff to be a centered column */
+  #main-content #staff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  /* Each card should be its own centered block */
+  #main-content #staff .staffCard {
+    flex: 0 0 auto ;
+    width: 100% ;
+    max-width: 320px;    
+    margin: 0 auto 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 8px;
+  }
+
+  /* Title stretches full-card width */
+  #main-content #staff .staffTitle {
+    width: 100%;
+    text-align: center;
+    padding: 10px 6px;
+  }
+
+  /* Make wrapper scale but preserve aspect ratio */
+  #main-content #staff .staffImgWrap {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 2 / 3;    
+    overflow: hidden;
+    margin-top: 8px;
+  }
+
+  /* Image fills wrapper — never overflow horizontally */
+  #main-content #staff .staffImgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Prevent any lingering flex growth on nav or other items */
+  #main-content #main-nav ul,
+  #main-content #main-nav li,
+  #main-content #main-nav a {
+    flex: none;
+  }
+
+  /* Idea rows: stack on mobile */
+  #main-content .idea-row,
+  #main-content .idea-row.reverse {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #main-content .idea-img {
+    width: 100%;
+    min-height: 160px;
+  }
+
+  #main-content .idea-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+    
+
