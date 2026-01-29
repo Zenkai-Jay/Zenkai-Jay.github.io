@@ -25,6 +25,20 @@ body {
 
 }
 
+img{
+    max-width: 100%;
+}
+
+#square{
+    width: 100px;
+    height: 100px;
+    background: lightsalmon;
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
 /* Gallery */
 #gallery section{
     background: lightgray;
@@ -35,6 +49,12 @@ body {
 
 #gallery section h3{
     text-align: center;
+}
+
+.area{
+    height: 400px;
+    background: #cdb4db;
+
 }
 
 
@@ -64,6 +84,12 @@ body {
 
 /* Larger devices */
 @media (min-width: 768px) {
+
+ #content {
+    justify-content: space-between;
+    gap:1em;
+}
+
 .colums{
     display: flex;
 }
