@@ -1,0 +1,292 @@
+/* Main Layout */
+#main-content {
+  margin: auto;
+}
+
+/* Navigation */
+nav ul {
+  padding-left: 0%;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+
+/*
+   Header
+ */
+#main-header {
+  background-color: black;
+}
+
+#main-header h2 {
+  color: white;
+  text-align: right;
+  margin: 5px;
+}
+
+#main-header a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#main-header img {
+  width: 40%;
+  height: 90%;
+}
+
+/*
+   Sub Navigation
+ */
+#sub-nav {
+  background: #75000A;
+  padding: 0%;
+}
+
+#sub-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#sub-nav a:hover{
+    color: black;
+}
+
+#sub-nav h2 {
+  text-align: right;
+}
+
+/* 
+   Images
+    */
+.main-image {
+  padding: 1px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 
+   Footer
+    */
+#main-footer {
+  background-color: #75000A;
+}
+
+/* 
+   Intro Section
+    */
+.intro {
+  background-color: #75000A;
+  color: white;
+  padding: 5px;
+}
+
+.intro a {
+  background: black;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.intro a:hover{
+    color:red
+}
+
+/* 
+   Utility
+    */
+.circle {
+  background-color: crimson;
+  border-radius: 50%;
+}
+
+.quote p {
+  color: #75000A;
+}
+
+/* 
+   Research Section
+    */
+.research {
+  background-color: #75000A;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+
+.research a {
+  background: black;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.research a:hover{
+    color:red
+}
+
+/* 
+   Center Section
+    */
+.Center {
+  background-color: #75000A;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+
+.Center a {
+  background: black;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.Center a:hover{
+    color:red
+}
+
+/* 
+   Links Grid
+    */
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h3 a {
+  color: #75000A;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* 
+   Stay Connected Section
+    */
+.stay-connected {
+  text-align: center;
+  background: #f2f2f2;
+  padding: 4rem 1rem;
+}
+
+.stay-connected h1 {
+  color: #7b0f16;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+.stay-connected p {
+  color: #333;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+.stay-connected ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.stay-connected li a {
+  text-decoration: none;
+  background: #760109;
+  padding: 20px;
+  color: white;
+  border: 2px solid white;
+}
+
+/* 
+   SOMC Section
+    */
+.SOMC {
+  background: #F2F2F2;
+}
+
+.SOMC a {
+  text-decoration: none;
+}
+
+.SOMC h2 a {
+  color: #75000A;
+  padding: 5px;
+}
+
+.SOMC h2 a:hover {
+  color: black;
+}
+
+.SOMC h4 a {
+  background: black;
+  border: 5px solid white;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.12);
+}
+
+.SOMC li a {
+  text-align: right;
+}
+
+/* 
+   Larger Devices
+    */
+@media (min-width: 768px) {
+
+  .columns {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .columns > * {
+    min-width: 0;
+  }
+
+  .main-image {
+    flex: 1 1 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .sub-columns {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .stay-connected ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
