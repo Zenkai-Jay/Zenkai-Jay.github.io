@@ -1,97 +1,79 @@
-#content{
+body {
+    background-color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:bisque;
+}
+
+#content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
     width: 95%;
     padding: 2%;
     border-radius: 5px;
     margin: auto;
-
 }
 
-/*Images*/
-img{
+/* Images*/
+img {
     width: 200px;
     height: 200px;
-    padding:5px;
-    background: black;
-}
-
-head{
-    text-decoration: aliceblue;
-}
-
-
-
-body
-{
-    background-color: beige;
-    padding: 2%;
-}
-
-
-
-.description{
-    color: black;
-}
-
-.headers{
-    color: black;
-    text-align: center;
-}
-
-
-.assignmentList{
-    color:azure;
     padding: 5px;
     background: black;
-    margin: auto;
-    display: flex;
-    gap: 20px;
 }
 
-.assignments{
-    flex: 1;
-    padding: 2%;
-    text-align: center;
-    background: azure;
+/* Text */
+.description {
     color: black;
-    border: black;
 }
 
-.assignments li{
-    padding: 10px;
-}
-
-.assignmentList a{
-    color:whitesmoke;
-}
-
-a{
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+.headers {
+    color: black;
     text-align: center;
 }
 
-#github{
+/* Assignment container */
+.assignments {
+    background: black;
+    padding: 5px;
+    margin: auto;
+}
+
+/* List reset */
+.columns {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual items */
+.columns li {
+    background: bisque;
+    color: black;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#github {
     color: blueviolet;
     text-align: center;
 }
 
-.ol{
-    list-style-type: none;
-}
 
-@media (max-width: 800px){
-    .assignmentList{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+@media (min-width: 768px) {
+    .columns {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;   
+        justify-content: center;
     }
 
-    .assignments{
-        width: 100%;
-        max-width: max-content;
-    }
+    /*.columns li {
+        width: 170px;      
+    }*/
 }
-
