@@ -1,3 +1,99 @@
 body{
     background: bisque;
 }
+
+#main-content{
+    width: 80%;
+    margin: auto;
+}
+/* Header */
+#main-header{
+    background-color: antiquewhite;
+    padding: 5px;
+    position: relative;
+}
+
+#main header h1{
+    padding: 100px;
+}
+
+logo{
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/* Nav */
+#main-nav{
+    
+}
+
+#main-nav a{
+    text-decoration: none;
+}
+
+#main-nav li{
+    list-style-type: none;
+}
+
+
+/* header section classes */
+.home, .about, .contact, .picture{
+    background: #2B2B2B;
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  
+}
+
+.home a, .about a, .contact a, .picture a{
+    color: white;
+
+}
+
+.home a:hover, .about a:hover, .contact a:hover, .picture a:hover{
+    color: blanchedalmond;
+    width: 20px;
+    height: 20px;
+
+}
+
+/*Sidebar*/
+#sidebar{
+    background: #E2C7A1;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+    .columns{
+        display: flex;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    .sub-columns{
+        display: flex;
+    }
+}
