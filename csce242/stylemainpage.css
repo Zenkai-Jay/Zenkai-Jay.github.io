@@ -68,7 +68,7 @@ a {
 @media (min-width: 768px) {
     .columns {
         display: flex;
-        gap: 40px;
+        gap: 28px;
         flex-wrap: wrap;   
         justify-content: center;
     }

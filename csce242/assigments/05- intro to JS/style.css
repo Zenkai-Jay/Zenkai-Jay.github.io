@@ -1,0 +1,112 @@
+body {
+    background: #B03F1E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+
+#main-header {
+    text-align: center;
+}
+
+#main-header h2 {
+    color: antiquewhite;
+}
+
+/* Container for the columns */
+.columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Individual cards */
+.card {
+    background: #F4F1D0;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #9BAEAE;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Card headings */
+.card h3 {
+    color: #4E6E6E;
+}
+
+/* Makes the card clickable */
+#geometryCard{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+/* Triangle */
+.triangle{
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #B03F1E;
+    
+}
+
+/* Triangle hidden*/
+.hidden{
+    display: none;
+}
+
+/* Frame card*/
+#imageCard{
+    text-align: center;
+    
+}
+
+#sunImage{
+    display: flex;
+    height: auto;
+    width: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+.framed{
+    padding: 10px;
+    border-top: 6px solid red;
+    border-right: 6px solid green;
+    border-bottom: 6px solid blue;
+    border-left: 6px solid purple;
+}
+
+/* Image sizing */
+.card img {
+    width: 80px;
+    margin-top: 20px;
+}
+
+
+/*Footer*/
+#main-footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
