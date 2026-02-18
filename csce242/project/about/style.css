@@ -1,0 +1,167 @@
+/* Main Structure */
+body{
+    background-color: #F5E6D3;
+}
+/*Header*/
+#main-header img{
+    width: 300px;
+    height: 200px;
+}
+
+/*Nav*/
+#main-nav{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+nav a{
+    margin-left: 20px; /* spacing between links */
+    text-decoration: none;
+    text-align: right;
+    color: black;
+}
+
+nav a:hover{
+    color: burlywood;
+}
+
+#signUp{
+    background: green;
+    padding-right: 20px;
+    border-radius: 60px;
+    display: inline-block;
+
+}
+
+
+#signUp a{
+    color: white;
+}
+
+#signUp a:hover{
+    color: burlywood;
+}
+
+nav ul{
+padding-right: 5px;
+}
+
+nav li{
+    list-style-type: none;
+    
+}
+
+/*hero*/
+
+.hero {
+    height: 100vh; /* full screen height */
+    background-image: url("image/Intro.png");
+    background-size: cover;        /* fills screen */
+    background-position: center;   /* keeps it centered */
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;   /* vertical center */
+    padding-left: 60px;    /* move text away from edge */
+}
+
+.hero-text{
+    color:white;
+    max-width: 500px;
+}
+
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text h2{
+    background: black;
+    padding: 20px;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+
+.hero-text a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-text a:hover{
+    color: burlywood;
+}
+
+/*Card*/
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding:  1rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card img{
+    width: 450px;
+    height: 400px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+#content{
+    h1{
+        text-align: center;
+    }
+
+
+}
+
+
+#main-footer{
+    background-color: brown;
+    padding: 30px;
+}
+footer p{
+    text-align: center;
+    color: bisque;
+}
+
+.mission h1{
+    text-align: center;
+}
+
+.mission p{
+    text-align: center;
+}
+
+
+
+
+
+
+@media (min-width: 768px){
+    .columns{
+        display: flex;
+        gap: 5px;
+    }
+
+
+    .links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
