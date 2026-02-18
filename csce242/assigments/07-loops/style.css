@@ -1,0 +1,51 @@
+body {
+  background: #e6ddd5;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+h1 {
+  color: #6b8f7a;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #e58ca0;
+  margin-bottom: 30px;
+}
+
+/* Tank */
+.tank {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #5db9e8, #2b87c7);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 8px solid rgba(255,255,255,0.6);
+}
+
+/* Bubble */
+.bubble {
+  position: absolute;
+  bottom: -20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  animation: rise linear infinite;
+}
+
+/* Animation */
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+}
