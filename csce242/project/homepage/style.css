@@ -1,3 +1,10 @@
+:root{
+      --bg: #f6ead9;     /* page background (beige) */
+      --accent: #0f1724; /* dark text */
+      --max-width: 1100px;
+      --content-width: 60%; /* change to adjust text column width */
+    }
+
 /* Main Structure */
 body{
     background-color: #F5E6D3;
@@ -88,6 +95,9 @@ nav li{
     display: inline-block;
 }
 
+#btn2{
+    background: green;
+}
 
 .hero-text a{
     text-decoration: none;
@@ -105,14 +115,16 @@ nav li{
   gap: 1.5rem;
   margin: 2rem auto;
   padding:  1rem;
+  
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .card img{
-    width: 450px;
-    height: 400px;
+    width: 500px;
+    height: 550px;
+    padding-left: 60px;
 }
 
 hr {
@@ -130,6 +142,59 @@ hr {
 
 }
 
+.mission-section{
+      display:flex;
+      align-items:center;              
+      justify-content:space-between;
+      gap: 2.5rem;
+      max-width: var(--max-width);
+        margin: 32px auto;   
+      padding: 20px;
+      border-style: double;
+      border-color: #6B8E5A;
+      border-radius: 80px;
+      border-width: 10px;
+    }
+
+   
+    .mission-text{
+      flex: 1 1 var(--content-width);
+      min-width: 240px;
+      
+    }
+
+    .mission-text h1{
+      margin: 0 0 16px 0;
+      font-size: 70px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .mission-text h2{
+      margin: 0;
+      max-width: 620px;
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 600; 
+    }
+
+
+
+    .mission-image{
+      flex: 0 0 auto;
+      display:flex;
+      align-items:right;
+      justify-content:center;
+    }
+
+
+    .mission-image img{
+      display:block;
+      width: 650px;    /* adjust to taste */
+      height: auto;
+      filter: none;
+
+    }
 
 #main-footer{
     background-color: brown;
@@ -161,4 +226,10 @@ footer p{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
+
+  .mission-illustration{
+        order: 2;
+        margin-top: 18px;
+      }
 }
