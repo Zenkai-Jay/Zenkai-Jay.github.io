@@ -123,8 +123,17 @@ nav li{
 
 .card img{
     width: 500px;
-    height: 550px;
-    padding-left: 60px;
+    height: 650px;
+    padding-left: 10px;
+}
+
+.food-cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.food-cards a:hover{
+    color: burlywood;
 }
 
 hr {
@@ -206,6 +215,16 @@ footer p{
 }
 
 
+#footer-share{
+    background-color: #6B8E5A;
+    padding: 30px;
+}
+
+footer h1{
+    color: white;
+}
+
+
 
 
 
@@ -229,6 +248,7 @@ footer p{
 
 
   .mission-illustration{
+        display: flex;
         order: 2;
         margin-top: 18px;
       }
