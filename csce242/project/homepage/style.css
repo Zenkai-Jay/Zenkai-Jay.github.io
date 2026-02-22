@@ -210,7 +210,6 @@ hr {
     padding: 30px;
 }
 footer p{
-    text-align: center;
     color: bisque;
 }
 
@@ -221,7 +220,124 @@ footer p{
 }
 
 footer h1{
+    color: bisque
+}
+
+#footer-share h2{
+     padding: 20px;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+#footer-share a{
+    text-decoration: none;
     color: white;
+}
+
+#btn-footer{
+    background: black;
+}
+
+#footer-share a:hover{
+    color: burlywood;
+}
+
+
+.pizza-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    
+}
+
+.pizza-image img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pizza-text {
+    max-width: 450px;
+}
+
+.pizza-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.pizza-text .description {
+    margin-bottom: 15px;
+}
+
+.pizza-text .meta {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #2E2E2E;
+}
+
+/* Two-column layout */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+/* Left column stacked */
+.left-col {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+/* Vertical divider */
+.right-col {
+  border-left: 2px solid #cccccc;
+  padding-left: 25px;
+}
+
+/* Horizontal divider between left boxes */
+.ingredients-box {
+  border-bottom: 2px solid #cccccc;
+}
+
+/* Shared box padding */
+.box {
+  padding: 20px;
+}
+
+/* Headings */
+.box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Lists */
+.ingredients-box ul,
+.tips-box ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* Instruction steps */
+.instructions-box .step {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.instructions-box .step strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
 
 
@@ -252,4 +368,21 @@ footer h1{
         order: 2;
         margin-top: 18px;
       }
+
+
+      .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .right-col {
+    border-left: none;
+    border-top: 2px solid #cccccc;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .pizza-section{
+    flex-direction: row;
+  }
+
 }
