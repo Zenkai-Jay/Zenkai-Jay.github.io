@@ -99,6 +99,10 @@ nav li{
     background: green;
 }
 
+#btn3{
+    background: green;
+}
+
 .hero-text a{
     text-decoration: none;
     color: white;
