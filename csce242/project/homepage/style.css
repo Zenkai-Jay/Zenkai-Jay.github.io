@@ -148,8 +148,11 @@ hr {
 }
 
 #content{
+
+  background: #4f6f52;
     h1{
         text-align: center;
+        padding-top: 40px;
     }
 
 
@@ -208,6 +211,7 @@ hr {
       filter: none;
 
     }
+
 
 #main-footer{
     background-color: brown;
@@ -388,5 +392,7 @@ footer h1{
   .pizza-section{
     flex-direction: row;
   }
+    
+
 
 }

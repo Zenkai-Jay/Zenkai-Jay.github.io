@@ -148,6 +148,12 @@ footer p{
     text-align: center;
 }
 
+/* Recipe filter styles */
+.recipe-filter-wrap { gap: .5rem; margin-bottom: 1rem; }
+.recipe-filter-wrap label { display:inline-block; }
+.recipe-filter-wrap input { padding: .45rem .6rem; border-radius: 6px; border: 1px solid #d1d5db; }
+.recipe-filter-wrap button { cursor: pointer; padding: .35rem .6rem; border-radius: 6px; }
+.no-results { font-style: italic; color: #6b7280; margin-top: 1rem; }
 
 
 
