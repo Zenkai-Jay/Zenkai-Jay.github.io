@@ -15,6 +15,7 @@
   filterWrap.style.alignItems = 'center';
   filterWrap.style.gap = '0.5rem';
   filterWrap.style.margin = '0 0 1rem';
+  filterWrap.style.justifyContent = 'center'; // center under hero
 
   const label = document.createElement('label');
   label.htmlFor = 'recipe-filter';
@@ -47,8 +48,13 @@
   filterWrap.appendChild(input);
   filterWrap.appendChild(clearBtn);
 
-  // Insert UI at the top of the recipesSection
-  recipesSection.insertBefore(filterWrap, recipesSection.firstChild);
+  // Insert UI just after the hero section (if present), otherwise at top of recipesSection
+  const heroSection = document.querySelector('section.hero');
+  if (heroSection && heroSection.parentNode) {
+    heroSection.insertAdjacentElement('afterend', filterWrap);
+  } else {
+    recipesSection.insertBefore(filterWrap, recipesSection.firstChild);
+  }
 
   // Create "no results" message (below the cards)
   const noResults = document.createElement('div');
@@ -110,3 +116,41 @@
   // Initial run (show all)
   filterCards('');
 })();
+
+
+const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    formData.append("access_key", "ac1a39c8-51bf-4af4-bb11-ecf256d43cbb");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});

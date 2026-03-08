@@ -102,8 +102,17 @@
 
                 <footer id="footer-share">
                     <h1>Submit Your Recipes!</h1>
-                    <p>If you have a recipe that you’ll like to share, click here!</p>
-                    <h2 id="btn-footer"><a href="#">Share With Us!</a></h2>
+                    <p>If you have a recipe that you’ll like to share, submit this form!</p>
+                    <section id="contact-us">
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ac1a39c8-51bf-4af4-bb11-ecf256d43cbb">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <textarea name="message" required></textarea>
+                    <button type="submit">Submit Form</button>
+                    </form>
+                </section>
                 </footer>
 
         </div>
